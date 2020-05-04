@@ -43,8 +43,8 @@ while True:
     numTest = prediction[0][0]
     cv2.putText(frame,numTest,(10,120), cv2.FONT_HERSHEY_PLAIN, 1, (0,255,255), 1)
     cv2.imshow('frame',frame)
-#     if(numTest == 'FIVE'):
-#             pyautogui.press('space')    
+    if(numTest == 'FIVE'):
+            pyautogui.press('space')    
     
 
     interrupt = cv2.waitKey(10)
