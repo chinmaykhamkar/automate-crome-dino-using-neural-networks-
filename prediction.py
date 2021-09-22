@@ -22,8 +22,8 @@ category = {0:'ZERO',5:'FIVE'}
 while True:
     _,frame = cap.read()
     frame = cv2.flip(frame,1)
-    x1 = 250
-    y1 = 110
+    x1 = 150
+    y1 = 10
     x2 = 550
     y2 = 410
 

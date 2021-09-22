@@ -32,15 +32,15 @@ while True:
 
     #generate ROI( region of intrest)
     # coordinates of roi
-    x1 = 250
-    y1 = 110
+    x1 = 150
+    y1 = 10
     x2 = 550
     y2 = 410
     # draw the rectange 
     cv2.rectangle(frame,(x1,y1),(x2,y2),(255,0,0),1)
     # extract the roi
     roi = frame[y1:y2,x1:x2]
-    roi = cv2.resize(roi,(64,64))
+    roi = cv2.resize(roi,(128,128))
     cv2.imshow('frame',frame)
     # convert roi image to grayscale
     roi = cv2.cvtColor(roi,cv2.COLOR_BGR2GRAY)
